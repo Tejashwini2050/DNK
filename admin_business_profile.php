@@ -52,7 +52,7 @@ if(isset($_POST['submit']))
       <input type="text" name="city" required placeholder="enter your city" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="text" name="state" required placeholder="enter your state" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="text" name="pincode" required placeholder="enter your pincode" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="text" name="address" required placeholder="enter your address" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="text" name="address" required placeholder="enter your address" maxlength="100"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="submit" value="Submit" class="btn" name="submit">
    </form>
 
