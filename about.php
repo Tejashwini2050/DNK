@@ -18,7 +18,7 @@ if(isset($_SESSION['user_id'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>about</title>
+   <title>About</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    
@@ -42,9 +42,9 @@ if(isset($_SESSION['user_id'])){
       </div>
 
       <div class="content">
-         <h3>why choose us?</h3>
-         <p>We at KART are dedicated to serving our customers their highest satisfaction levels.</p>
-         <a href="contact.php" class="btn">contact us</a>
+         <h3>Why choose us?</h3>
+         <p>We at KART are dedicated to serving our sellers and customers their highest satisfaction levels.</p>
+         <a href="contact.php" class="btn">Contact us</a>
       </div>
 
    </div>
@@ -53,7 +53,7 @@ if(isset($_SESSION['user_id'])){
 
 <section class="reviews">
    
-   <h1 class="heading">client's reviews</h1>
+   <h1 class="heading">Client's reviews</h1>
 
    <div class="swiper reviews-slider">
 
@@ -61,7 +61,7 @@ if(isset($_SESSION['user_id'])){
 
       <div class="swiper-slide slide">
          <img src="images/pic-1.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>The Pashmina Shawl is a true gem. It's incredibly soft, beautifully crafted, and versatile. I've worn it to formal events and casually, and it always adds an elegant touch to my outfits. The quality is outstanding, and it's become a wardrobe essential for me. Highly recommended!</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -69,12 +69,13 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Rafe Cameron</h3>
+         <p>User</p>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-2.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Selling my miniature paintings has been an amazing journey. Each piece I create carries a piece of my heart, and it's a joy to share them with art lovers like you. It's heartwarming to see these artworks find new homes and bring smiles to people's faces. Thank you for supporting my passion and allowing me to share my art with the world.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -82,12 +83,13 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Anujna Gupta</h3></h3>
+         <p>Seller</p>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-3.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Selling handcrafted goods has been an incredible experience. Each piece I offer is a labor of love and creativity, crafted with precision and care. Seeing my customers fall in love with these handcrafted treasures is truly heartwarming. Your support not only sustains my craft but also helps preserve the rich heritage of our artisans. Thank you for choosing to support handmade. Your patronage fuels the creativity and passion that goes into every piece, making this journey immensely rewarding. </p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -95,12 +97,13 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Tarak Singhania</h3>
+         <p>Seller</p>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-4.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>I recently purchased Indian jewelry, and I must say, I'm utterly mesmerized. The intricate designs, vibrant colors, and attention to detail are absolutely stunning. Thank you for offering such exquisite pieces. I'm proud to be a part of preserving and celebrating Indian craftsmanship.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -108,12 +111,13 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Alyssia S</h3>
+         <p>User</p>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-5.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>My blue pottery purchase has been a delight! These hand-painted pieces are not only stunning but also surprisingly durable. They've added a unique charm to my home, and I'm proud to support local artisans. Highly recommended for both beauty and functionality!</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -121,12 +125,13 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Gabriel Centineo</h3>
+         <p>User</p>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-6.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Selling Kutch embroidery is a joy. Each piece is a testament to India's rich heritage, a burst of color and tradition. Your support empowers artisans, making this journey both beautiful and rewarding. Thank you for choosing Kutch embroidery.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -134,7 +139,8 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Anika Singh</h3>
+         <p>Seller</p>
       </div>
 
    </div>
