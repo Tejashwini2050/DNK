@@ -20,7 +20,7 @@ include 'components/wishlist_cart.php';
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+   <title>Home</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    
@@ -48,9 +48,9 @@ include 'components/wishlist_cart.php';
          <div class="image">
             <img src="images/Apple_announce-iphone12pro_10132020.jpg.og.jpg" alt=""> 
             <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest smartphones</h3>
-            <a href="shop.php" class="btn">shop now</a>
+            <span>Upto 50% off</span>
+            <h3>Latest smartphones</h3>
+            <a href="shop.php" class="btn">Shop now</a>
             </div> 
          </div>
       </div>
@@ -60,9 +60,9 @@ include 'components/wishlist_cart.php';
          <div class="image">
             <img src="images/watchhome.jpeg" alt="">
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest watches</h3>
-            <a href="shop.php" class="btn">shop now</a>
+            <span>Upto 50% off</span>
+            <h3>Latest watches</h3>
+            <a href="shop.php" class="btn">Shop now</a>
          </div>
          </div>
       </div>
@@ -71,9 +71,9 @@ include 'components/wishlist_cart.php';
          <div class="image">
             <img src="images/headhome.jpg" alt="">
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest headsets</h3>
-            <a href="shop.php" class="btn">shop now</a>
+            <span>Upto 50% off</span>
+            <h3>Latest headsets</h3>
+            <a href="shop.php" class="btn">Shop now</a>
          </div>
          </div>
       </div>

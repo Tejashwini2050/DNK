@@ -92,7 +92,7 @@ if(isset($_POST['update'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>update product</title>
+   <title>Update product</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -105,7 +105,7 @@ if(isset($_POST['update'])){
 
 <section class="update-product">
 
-   <h1 class="heading">update product</h1>
+   <h1 class="heading">Update product</h1>
 
    <?php
       $update_id = $_GET['update'];
@@ -129,21 +129,17 @@ if(isset($_POST['update'])){
             <img src="../uploaded_img/<?= $fetch_products['image_03']; ?>" alt="">
          </div>
       </div>
-      <span>update name</span>
+      <span>Update name</span>
       <input type="text" name="name" required class="box" maxlength="100" placeholder="enter product name" value="<?= $fetch_products['name']; ?>">
-      <span>update price</span>
+      <span>Update price</span>
       <input type="number" name="price" required class="box" min="0" max="9999999999" placeholder="enter product price" onkeypress="if(this.value.length == 10) return false;" value="<?= $fetch_products['price']; ?>">
-      <span>update details</span>
+      <span>Update details</span>
       <textarea name="details" class="box" required cols="30" rows="10"><?= $fetch_products['details']; ?></textarea>
-      <span>update image 01</span>
+      <span>Update image 01</span>
       <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
-      <span>update image 02</span>
-      <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
-      <span>update image 03</span>
-      <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
       <div class="flex-btn">
          <input type="submit" name="update" class="btn" value="update">
-         <a href="products.php" class="option-btn">go back</a>
+         <a href="products.php" class="option-btn">Go back</a>
       </div>
    </form>
    
