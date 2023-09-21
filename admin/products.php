@@ -147,8 +147,8 @@ if (isset($_GET['delete'])) {
       <div class="price">Rs<span><?= $fetch_products['price']; ?></span>/-</div>
       <div class="details"><span><?= $fetch_products['details']; ?></span></div>
       <div class="flex-btn">  
-         <a href="update_product.php?update=<?= $fetch_products['pid']; ?>" class="option-btn">Update</a>
-         <a href="products.php?delete=<?= $fetch_products['pid']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">Delete</a>
+         <a href="update_product.php?update=<?= $fetch_products['pid']; ?>" class="option-btn">update</a>
+         <a href="products.php?delete=<?= $fetch_products['pid']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
       </div>
    </div>
    <?php
