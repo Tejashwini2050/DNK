@@ -219,6 +219,7 @@ section{
 
 .header .flex .profile.active{
    display: inline-block;
+   width:200px;
 }
 
 .header .flex .profile p{

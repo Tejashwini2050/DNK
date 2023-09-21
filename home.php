@@ -48,7 +48,6 @@ include 'components/wishlist_cart.php';
          <div class="image">
             <img src="jewellery1.png" alt=""> 
             <div class="content">
-            <span>upto 50% off</span>
             <h3>latest products</h3>
             <a href="shop.php" class="btn">shop now</a>
             </div> 
@@ -60,7 +59,6 @@ include 'components/wishlist_cart.php';
          <div class="image">
             <img src="images/newone.jpg" alt="">
          <div class="content">
-            <span>upto 50% off</span>
             <h3>latest handicrafts</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
@@ -71,8 +69,7 @@ include 'components/wishlist_cart.php';
          <div class="image">
             <img src="images/home new.jpg" alt="">
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest headsets</h3>
+            <h3>hand made pottery</h3>
             <a href="shop.php" class="btn">shop now</a>
          </div>
          </div>
@@ -96,34 +93,34 @@ include 'components/wishlist_cart.php';
 
    <div class="swiper-wrapper">
 
-   <a href="category.php?category=laptop" class="swiper-slide slide">
+   <a href="category.php?category=Ayurveda" class="swiper-slide slide">
       <img src="images/icon ayurveda new.png" alt="">
-      <h3>ayurveda</h3>
+      <h3>Ayurveda</h3>
    </a>
 
-   <a href="category.php?category=tv" class="swiper-slide slide">
+   <a href="category.php?category=Pottery" class="swiper-slide slide">
       <img src="images/icon pottery new.png" alt="">
-      <h3>pottery</h3>
+      <h3>Pottery</h3>
    </a>
 
-   <a href="category.php?category=camera" class="swiper-slide slide">
+   <a href="category.php?category=painting" class="swiper-slide slide">
       <img src="images/icon painting new.png" alt="">
-      <h3>painting</h3>
+      <h3>Painting</h3>
    </a>
 
-   <a href="category.php?category=mouse" class="swiper-slide slide">
+   <a href="category.php?category=scarf" class="swiper-slide slide">
       <img src="images/icon clothes2 new.png" alt="">
-      <h3>fabric</h3>
+      <h3>Fabric</h3>
    </a>
 
-   <a href="category.php?category=fridge" class="swiper-slide slide">
+   <a href="category.php?category=Jewellery" class="swiper-slide slide">
       <img src="images/icon jewelry new.png" alt="">
-      <h3>jewelry</h3>
+      <h3>Jewelry</h3>
    </a>
 
-   <a href="category.php?category=washing" class="swiper-slide slide">
+   <a href="category.php?category=handicraft" class="swiper-slide slide">
       <img src="images/icon handicraft new.png " alt="">
-      <h3>handicraft</h3>
+      <h3>Handicraft</h3>
    </a>
 
    </a>
@@ -151,12 +148,12 @@ include 'components/wishlist_cart.php';
       while($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)){
    ?>
    <form action="" method="post" class="swiper-slide slide">
-      <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
+      <input type="hidden" name="pid" value="<?= $fetch_product['pid']; ?>">
       <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
       <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
       <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
       <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
-      <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
+      <a href="quick_view.php?pid=<?= $fetch_product['pid']; ?>" class="fas fa-eye"></a>
       <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
       <div class="name"><?= $fetch_product['name']; ?></div>
       <div class="flex">
