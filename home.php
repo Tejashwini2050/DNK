@@ -1,4 +1,4 @@
-<?php
+?php
 
 include 'components/connect.php';
 
@@ -20,7 +20,7 @@ include 'components/wishlist_cart.php';
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home</title>
+   <title>home</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    
@@ -46,11 +46,11 @@ include 'components/wishlist_cart.php';
          <div class="swiper-slide slide">
             
          <div class="image">
-            <img src="images/Apple_announce-iphone12pro_10132020.jpg.og.jpg" alt=""> 
+            <img src="jewellery1.png" alt=""> 
             <div class="content">
-            <span>Upto 50% off</span>
-            <h3>Latest smartphones</h3>
-            <a href="shop.php" class="btn">Shop now</a>
+            <span>upto 50% off</span>
+            <h3>latest products</h3>
+            <a href="shop.php" class="btn">shop now</a>
             </div> 
          </div>
       </div>
@@ -58,22 +58,22 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/watchhome.jpeg" alt="">
+            <img src="images/newone.jpg" alt="">
          <div class="content">
-            <span>Upto 50% off</span>
-            <h3>Latest watches</h3>
-            <a href="shop.php" class="btn">Shop now</a>
+            <span>upto 50% off</span>
+            <h3>latest handicrafts</h3>
+            <a href="shop.php" class="btn">shop now</a>
          </div>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/headhome.jpg" alt="">
+            <img src="images/home new.jpg" alt="">
          <div class="content">
-            <span>Upto 50% off</span>
-            <h3>Latest headsets</h3>
-            <a href="shop.php" class="btn">Shop now</a>
+            <span>upto 50% off</span>
+            <h3>latest headsets</h3>
+            <a href="shop.php" class="btn">shop now</a>
          </div>
          </div>
       </div>
@@ -97,43 +97,35 @@ include 'components/wishlist_cart.php';
    <div class="swiper-wrapper">
 
    <a href="category.php?category=laptop" class="swiper-slide slide">
-      <img src="images/icon-1.png" alt="">
-      <h3>laptop</h3>
+      <img src="images/icon ayurveda new.png" alt="">
+      <h3>ayurveda</h3>
    </a>
 
    <a href="category.php?category=tv" class="swiper-slide slide">
-      <img src="images/icon-2.png" alt="">
-      <h3>tv</h3>
+      <img src="images/icon pottery new.png" alt="">
+      <h3>pottery</h3>
    </a>
 
    <a href="category.php?category=camera" class="swiper-slide slide">
-      <img src="images/icon-3.png" alt="">
-      <h3>camera</h3>
+      <img src="images/icon painting new.png" alt="">
+      <h3>painting</h3>
    </a>
 
    <a href="category.php?category=mouse" class="swiper-slide slide">
-      <img src="images/icon-4.png" alt="">
-      <h3>mouse</h3>
+      <img src="images/icon clothes2 new.png" alt="">
+      <h3>fabric</h3>
    </a>
 
    <a href="category.php?category=fridge" class="swiper-slide slide">
-      <img src="images/icon-5.png" alt="">
-      <h3>fridge</h3>
+      <img src="images/icon jewelry new.png" alt="">
+      <h3>jewelry</h3>
    </a>
 
    <a href="category.php?category=washing" class="swiper-slide slide">
-      <img src="images/icon-6.png" alt="">
-      <h3>washing machine</h3>
+      <img src="images/icon handicraft new.png " alt="">
+      <h3>handicraft</h3>
    </a>
 
-   <a href="category.php?category=smartphone" class="swiper-slide slide">
-      <img src="images/icon-7.png" alt="">
-      <h3>smartphone</h3>
-   </a>
-
-   <a href="category.php?category=watch" class="swiper-slide slide">
-      <img src="images/icon-8.png" alt="">
-      <h3>watch</h3>
    </a>
 
    </div>
@@ -153,7 +145,7 @@ include 'components/wishlist_cart.php';
    <div class="swiper-wrapper">
 
    <?php
-     $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6"); 
+     $select_products = $conn->prepare("SELECT * FROM products LIMIT 6"); 
      $select_products->execute();
      if($select_products->rowCount() > 0){
       while($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)){
@@ -162,9 +154,7 @@ include 'components/wishlist_cart.php';
       <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
       <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
       <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
-      <!--input type="hidden" name="weight" value="<?= $fetch_product['weight']; ?>"-->
       <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
-
       <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
       <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
       <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
